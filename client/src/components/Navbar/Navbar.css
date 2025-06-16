@@ -10,11 +10,20 @@
 .navbar a {
     text-decoration: none;
     color: black;
+    font-weight: bold;
+}
+
+.logo {
+    width: 12vw;
 }
 
 .links {
     display: flex;
     gap: 50px;
+}
+
+.links a:hover {
+    color: #DAA520;
 }
 
 .nav_buttons {

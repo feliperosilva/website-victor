@@ -14,4 +14,5 @@ html, body {
   font-family: sans-serif; /* or your custom font */
   background-color: #fff;  /* optional */
   color: #000;             /* optional */
+  overflow-x: hidden;
 }

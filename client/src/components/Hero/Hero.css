@@ -1,0 +1,46 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../assets/hero.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+/* ✅ This creates the dark overlay */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, 0.2); /* adjust opacity here */
+  z-index: 1;
+}
+
+.hero-container {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    font-family: "Cormorant Garamond", serif;
+    color: white;
+    z-index: 2;
+}
+
+.hero-title h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
