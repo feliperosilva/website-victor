@@ -1,0 +1,130 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 100px 50px;
+}
+
+.about-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    color: #ba9e00;
+    margin-bottom: 70px;
+}
+
+.about-container {    
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-img {
+    border-radius: 50px 0;
+}
+
+.about-img img {
+    max-width: 80%;
+    border-radius: 100px 0;
+}
+
+.about-description {
+    width: 50%;
+}
+
+.list-header {
+    font-size: 30px;
+    color: #ba9e00;
+    margin-bottom: 50px;
+}
+
+.dropdown-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.dropdown-item {
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.dropdown-button {
+  width: 100%;
+  background-color: #d1c376;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  padding: 15px;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.button-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-cta button {
+  position: relative;
+  overflow: hidden;
+  width: 40%;
+  height: 50px;
+  font-family: "Cormorant Garamond", serif;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #ba9e00;
+  border: none;
+  border-radius: 15px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+/* Add the shimmer effect with a pseudo-element */
+.button-cta button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+}
+
+/* Animation on hover */
+.button-cta button::before {
+  animation: shimmer 2.4s forwards infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+.button-cta button:hover {
+  background-color: #b5aa6e;
+}
