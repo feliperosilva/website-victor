@@ -1,4 +1,4 @@
-.about {
+.section2 {
   width: 100%;
   height: 100vh;
   margin-top: 50px;
@@ -6,7 +6,7 @@
   justify-content: space-around;
 }
 
-.about-info {
+.section2-info {
     max-width: 45%;
     color: #ba9e00;
     font-weight: 600;
@@ -17,22 +17,22 @@
     text-align: center;
 }
 
-.about-title {
+.section2-title {
     font-size: 42px;
     margin-bottom: 40px;
 }
 
-.about-description {
+.section2-description {
     font-size: 24px;
 }
 
-.about-img {
+.section2-img {
     max-width: 45%;
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
 }
 
-.about-img img{
+.section2-img img{
    width: 100%;
 }

@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Navbar from "./components/Navbar/Navbar"
 import Hero from "./components/Hero/Hero"
-import About from "./components/About/About"
+import Section2 from "./components/Section2/Section2"
 
 function App() {
   
@@ -9,7 +9,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <About />
+      <Section2 />
     </>
   )
 }
