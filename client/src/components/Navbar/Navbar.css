@@ -21,16 +21,81 @@
     width: 12vw;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
 .links {
     display: flex;
     gap: 50px;
 }
 
 .links a:hover {
-    color: #DAA520;
+    color: #ba9e00;
+    cursor: pointer;
 }
 
 .nav_buttons {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
+}
+
+.nav_buttons .whatsapp {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    width: 15vw;
+    height: 5vh;
+    padding: 5px;
+    background-color: #ba9e00;
+    border-radius: 15px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav_buttons .whatsapp::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+}
+
+/* Animation on hover */
+.nav_buttons .whatsapp::before {
+  animation: shimmer 2.4s forwards infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+.nav_buttons .whatsapp:hover {
+  background-color: #b5aa6e;
+}
+
+.whatsapp img {
+    width: 20px;
+    height: 20px;
 }

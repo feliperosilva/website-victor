@@ -1,20 +1,24 @@
 import './Navbar.css'
 import logo from '../../assets/Logo.png'
+import whatsapp from '../../assets/whatsapp-24.png'
 
-const Navbar = () => {
+interface NavbarProps {
+  onHeroClick: () => void;
+  onAboutClick: () => void;
+}
+
+const Navbar = ({ onHeroClick, onAboutClick}: NavbarProps) => {
   return (
     <div>
       <section className="navbar">
-        <a href=""><img src={logo} alt="" className='logo'/></a>
+        <a onClick={onHeroClick}><img src={logo} alt="" className='logo'/></a>
         <div className='links'>
-          <a href="">Sobre</a>
+          <a onClick={onAboutClick}>Sobre</a>
           <a href="">Empreendimento</a>
           <a href="">Contato</a>
         </div>
         <div className='nav_buttons'>
-          <button>Whatsapp</button>
-          <button>PT</button>
-          <button>EN</button>
+          <button className='whatsapp'>Atendimento Exclusivo <img src={whatsapp} alt="" /></button>
         </div>
       </section>      
     </div>
