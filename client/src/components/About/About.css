@@ -1,0 +1,38 @@
+.about {
+  width: 100%;
+  height: 100vh;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-info {
+    max-width: 45%;
+    color: #ba9e00;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    gap: 50px;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.about-description {
+    font-size: 24px;
+}
+
+.about-img {
+    max-width: 45%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.about-img img{
+   width: 100%;
+}

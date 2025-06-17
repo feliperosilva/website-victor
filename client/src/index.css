@@ -11,7 +11,7 @@
 html, body {
   width: 100%;
   height: 100%;
-  font-family: sans-serif; /* or your custom font */
+  font-family: "Cormorant Garamond", serif; /* or your custom font */
   background-color: #fff;  /* optional */
   color: #000;             /* optional */
   overflow-x: hidden;
