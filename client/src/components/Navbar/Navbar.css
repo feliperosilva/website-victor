@@ -8,6 +8,7 @@
     position: fixed;
     background-color: white;
     z-index: 10;
+    border-bottom: #ba9e00 3px solid;
 }
 
 .navbar a {

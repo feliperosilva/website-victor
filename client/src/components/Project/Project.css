@@ -1,0 +1,36 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 70px;
+}
+
+.project-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #ba9e00;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 70px;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.project-title {
+    font-size: 50px;
+}
+
+.project-subtitle {
+    font-size: 28px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* opcional: só é útil se quiser também alinhar verticalmente */
+    width: 100%;
+}

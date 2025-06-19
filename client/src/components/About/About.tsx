@@ -4,20 +4,20 @@ import { useState } from 'react';
 
 const items = [
   {
-    title: 'Mobilidade',
-    content: 'Mobilidade e agilidade graças ao fácil acesso ao metrô, permitindo chegar mais rápido a outras regiões da cidade.'
+    title: 'Deslocamento rápido e eficiente',
+    content: 'Aproveite a praticidade de estar a poucos metros do metrô, garantindo mobilidade ágil para ir a outras regiões da cidade com conforto. Chegando a seu destino de forma rápida, segura e sem trânsito. Próximo à estação de metrô jardim oceânico e a estação de brt Afrânio Costa.'
   },
   {
-    title: 'Conveniência',
-    content: 'Conveniência de ter os principais shoppings, hipermercados e centros empresariais da região.'
+    title: 'Facilidade e acesso privilegiado',
+    content: 'Desfrute da comodidade de estar próximo aos principais shoppings, supermercados e centros empresariais da região. Uma localização estratégica que garante praticidade no dia a dia, conectando você a tudo que precisa com rapidez e conveniência.'
   },
   {
-    title: 'Qualidade de Vida',
-    content: 'Perto do mar, com vista para a Pedra da Gávea e o Maciço da Tijuca. No Green Park Barra, localização é qualidade de vida.'
+    title: 'Vista privilegiada e qualidade de vida',
+    content: 'Desfrute da localização única do Green Park Barra, onde o Mar se faz presente e a paisagem revela o verde e a imponente Pedra da Gávea. O cenário espetacular que combina natureza, conforto e bem-estar, garantindo uma experiência de vida incomparável.'
   },
   {
-    title: 'Tranquilidade',
-    content: 'Tecnologia de ponta e monitoramento completo garantem a tranquilidade de viver em um ambiente seguro, com controle de acesso, câmeras, alarmes e botão de emergência nas áreas comuns.'
+    title: 'Segurança 24 horas em um bairro planejado',
+    content: 'O Green Park Barra é mais do que um endereço. É um espaço cuidadosamente planejado para oferecer qualidade de vida e tranquilidade. Com monitoramento completo tecnologia de ponta e segurança 24 horas por dia. Um condomínio protegido com segurança de alto desempenho, pensando para garantir o bem estar de quem ira viver aqui.'
   }
 ];
 
