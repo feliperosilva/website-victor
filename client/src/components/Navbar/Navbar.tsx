@@ -9,6 +9,16 @@ interface NavbarProps {
 }
 
 const Navbar = ({ onHeroClick, onAboutClick, onProjectClick}: NavbarProps) => {
+  
+  const phoneNumber = '5521979143741'
+  const message = 'Olá! Gostaria de mais informações sobre o projeto Green Park!'
+
+  const handleClick = () => {
+    const encodedMessage = encodeURIComponent(message)
+    const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+    window.open(url, '_blank')
+  }
+
   return (
     <div>
       <section className="navbar">
@@ -20,7 +30,7 @@ const Navbar = ({ onHeroClick, onAboutClick, onProjectClick}: NavbarProps) => {
           <a href="">Contato</a>
         </div>
         <div className='nav_buttons'>
-          <button className='whatsapp'>Atendimento Exclusivo <img src={whatsapp} alt="" /></button>
+          <button className='whatsapp' onClick={handleClick}>Atendimento Exclusivo <img src={whatsapp} alt="" /></button>
         </div>
       </section>      
     </div>
