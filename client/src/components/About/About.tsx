@@ -1,6 +1,7 @@
 import './About.css'
 import about from '../../assets/about.png'
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const items = [
   {
@@ -28,14 +29,42 @@ const About = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
+  const phoneNumber = '5521979143741'
+  const message = 'Olá! Gostaria de mais informações sobre o projeto Green Park!'
+
+  const handleClick = () => {
+    const encodedMessage = encodeURIComponent(message)
+    const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+    window.open(url, '_blank')
+  }
+
   return (
     <section className="about">
+      <motion.div
+        initial={{ y: -100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: false, amount: 0.1 }}
+        transition={{ duration: 2, ease: 'easeOut' }}
+      >
         <h1 className='about-header'>Descubra o que torna o Green Park Barra único</h1>
+      </motion.div>
         <div className='about-container'>
-            <div className='about-content'>
+            <motion.div 
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: false, amount: 0.1 }}
+              transition={{ duration: 2, ease: 'easeOut' }}
+              className='about-content'
+            >
                 <div className='about-img'><img src={about} alt="" /></div>
-            </div>
-            <div className='about-description'>
+            </motion.div>
+            <motion.div 
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: false, amount: 0.1 }}
+              transition={{ duration: 2, ease: 'easeOut' }}
+              className='about-description'
+            >
                 <h2 className='list-header'>Explore cada detalhe que faz deste empreendimento um verdadeiro privilégio de viver</h2>
                 <ul className="dropdown-list">
                     {items.map((item, index) => (
@@ -53,9 +82,9 @@ const About = () => {
                     ))}
                 </ul>
                 <div className='button-cta'>
-                    <button>Saber Mais</button>
+                    <button onClick={handleClick}>Saber Mais</button>
                 </div>                
-            </div>      
+            </motion.div>      
         </div>
         
     </section>
