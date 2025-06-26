@@ -5,6 +5,7 @@ import Section2 from "./components/Section2/Section2"
 import About from "./components/About/About"
 import Project from "./components/Project/Project"
 import Gallery from "./components/Gallery/Gallery"
+import Footer from "./components/Footer/Footer"
 import { useRef } from "react"
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
   const heroRef = useRef<HTMLElement | null>(null);
   const aboutRef = useRef<HTMLElement | null>(null);
   const projectRef = useRef<HTMLElement | null>(null);
+  const footerRef = useRef<HTMLElement | null>(null);
 
   const scrollToSection = (ref: React.RefObject<HTMLElement | null>) => {
     if (ref.current) {
@@ -25,6 +27,7 @@ function App() {
         onHeroClick={() => scrollToSection(heroRef)}
         onAboutClick={() => scrollToSection(aboutRef)}
         onProjectClick={() => scrollToSection(projectRef)}
+        onFooterClick={() => scrollToSection(footerRef)}
       />
       
       {/* Attach refs to the wrapping sections */}
@@ -46,6 +49,10 @@ function App() {
 
       <section>
         <Gallery />
+      </section>
+
+      <section ref={footerRef}>
+        <Footer />
       </section>
     </Router>
   );

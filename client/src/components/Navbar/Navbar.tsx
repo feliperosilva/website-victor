@@ -6,9 +6,10 @@ interface NavbarProps {
   onHeroClick: () => void;
   onAboutClick: () => void;
   onProjectClick: () => void;
+  onFooterClick: () => void;
 }
 
-const Navbar = ({ onHeroClick, onAboutClick, onProjectClick}: NavbarProps) => {
+const Navbar = ({ onHeroClick, onAboutClick, onProjectClick, onFooterClick}: NavbarProps) => {
   
   const phoneNumber = '5521979143741'
   const message = 'Olá! Gostaria de mais informações sobre o projeto Green Park!'
@@ -27,7 +28,7 @@ const Navbar = ({ onHeroClick, onAboutClick, onProjectClick}: NavbarProps) => {
           <a onClick={onHeroClick}>Home</a>
           <a onClick={onAboutClick}>Sobre</a>
           <a onClick={onProjectClick}>Empreendimento</a>
-          <a href="">Contato</a>
+          <a onClick={onFooterClick}>Contato</a>
         </div>
         <div className='nav_buttons'>
           <button className='whatsapp' onClick={handleClick}>Atendimento Exclusivo <img src={whatsapp} alt="" /></button>
