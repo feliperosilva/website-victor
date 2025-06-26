@@ -65,3 +65,10 @@
   color: white;
   cursor: pointer;
 }
+
+.swiper-button-prev {
+    color: #f0d431 !important;
+}
+.swiper-button-next {
+    color: #f0d431 !important;
+}
