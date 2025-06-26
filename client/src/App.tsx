@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero"
 import Section2 from "./components/Section2/Section2"
 import About from "./components/About/About"
 import Project from "./components/Project/Project"
+import Gallery from "./components/Gallery/Gallery"
 import { useRef } from "react"
 
 function App() {
@@ -41,6 +42,10 @@ function App() {
 
       <section ref={projectRef}>
         <Project />
+      </section>
+
+      <section>
+        <Gallery />
       </section>
     </Router>
   );
