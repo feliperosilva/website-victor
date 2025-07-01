@@ -22,7 +22,7 @@ csrf = CSRFProtect(app)
 
 CORS(app, origins=[
     'http://localhost:5173',
-    'https://portfolio-fy8k.onrender.com'
+    'https://firstclassrealty.onrender.com'
 ])
 
 @csrf.exempt
