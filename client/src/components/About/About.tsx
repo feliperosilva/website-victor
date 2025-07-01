@@ -29,7 +29,7 @@ const About = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  const phoneNumber = '5521979143741'
+  const phoneNumber = '5521969773443'
   const message = 'Olá! Gostaria de mais informações sobre o projeto Green Park!'
 
   const handleClick = () => {
