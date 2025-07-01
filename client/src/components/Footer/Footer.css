@@ -166,3 +166,25 @@
     font-style: italic;
     margin-left: 5px;
 }
+
+.success {
+    color: darkgreen;
+    border: solid 4px darkgreen;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.error {
+    color: darkred;
+    border: solid 4px darkred;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
