@@ -86,7 +86,7 @@ const Footer = () => {
         }
 
         try {
-            await axios.post('http://localhost:5000/api/contact', formData)
+            await axios.post('https://firstclassrealty-backend.onrender.com/api/contact', formData)
             setMessageType('success')
             setFormMessage('Formulário enviado com sucesso!')
             setFormData({
