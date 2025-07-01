@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from forms import ContactForm
+from .forms import ContactForm
 import os
 from flask_cors import CORS
 from flask_wtf.csrf import CSRFProtect
