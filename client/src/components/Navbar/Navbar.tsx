@@ -24,6 +24,7 @@ const Navbar = ({ onHeroClick, onAboutClick, onProjectClick, onFooterClick}: Nav
     <div>
       <section className="navbar">
         <a onClick={onHeroClick}><img src={logo} alt="" className='logo'/></a>
+        <button className='burger-menu'>&#9776;</button>
         <div className='links'>
           <a onClick={onHeroClick}>Home</a>
           <a onClick={onAboutClick}>Sobre</a>

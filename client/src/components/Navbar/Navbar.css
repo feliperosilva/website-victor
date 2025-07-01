@@ -26,6 +26,10 @@
     cursor: pointer;
 }
 
+.burger-menu {
+  display: none;
+}
+
 .links {
     display: flex;
     gap: 50px;
@@ -99,4 +103,33 @@
 .whatsapp img {
     width: 20px;
     height: 20px;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .nav_buttons {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+    font-size: 20px;
+    padding: 5px;
+    background-color: #ba9e00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .logo {
+    width: 100px;
+  }
 }
